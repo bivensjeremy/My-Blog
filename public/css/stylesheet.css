@@ -1,0 +1,180 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'RocknRoll One', sans-serif; */
+/* https://colorhunt.co/palette/273466 */
+ body {
+  background-color: #d8e3e7;
+  font-family: 'Montserrat', sans-serif;
+  color: #132c33;
+}
+
+.header-link{
+  color: #f6f5f5;
+}
+
+.header-info{
+  background-color: #51c4d3;
+  color:#fff;
+  padding: 0 7%;
+}
+.header-info h1{
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: 60px; 
+  margin-bottom: 10%; 
+  transform: rotate(-5deg);
+  text-shadow: 3px 3px #132c33;
+}
+.header-info h2{
+  margin-bottom: 10%;
+  font-size: 23px;
+}
+.left-side{
+  padding: 10% 7%;
+}
+.right-side{
+  margin: auto;
+}
+.blog-post-header{
+  font-family: 'RocknRoll One', sans-serif;
+  text-align: center;
+  padding: 3% 7%;
+}
+.blog-posts{
+  padding: 7% 10%;
+}
+.blog-post-header h1{
+  font-size: 50px;
+}
+.card-title{
+  font-family: 'RocknRoll One', sans-serif;
+  color: #132c33;
+}
+.card-text{
+  font-family: 'Open Sans', sans-serif;
+  color: #132c33;;
+}
+.blog-card{
+  padding: 3% 7%;
+}
+.blogcard{
+  box-shadow: 3px 3px 5px #132c33;
+}
+.card-body{
+  background-color: #51c4d3;
+}
+.meet-section{
+  margin: 0;
+  background-color: #126e82;
+  padding: 7% 7%;
+}
+
+.meet-me{
+  margin: auto;
+  
+}
+.meet-me-right{
+  margin: auto;
+  padding-left: 7%;
+}
+.meet-me-left{
+  margin: auto;
+  
+}
+.meet-me h1{
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: 60px; 
+  margin-bottom: 10%; 
+}
+.bottom-section{
+  background-color: #51c4d3;
+  padding: 5% 7% 3%;
+  color: #fff;
+}
+.blueprint-logo{
+  text-align: center;
+  border-right:  solid #d8e3e7;
+  border-radius: 5%;
+}
+.BP-logo{
+  width: 25%;
+}
+.contact-info{
+  border-left: solid #d8e3e7;
+  border-radius: 5%;
+}
+.contact-info p{
+  text-align: center;
+  margin-bottom: 0%;
+}
+.subscribe-bottom{
+  margin: auto;
+  text-align: center;
+}
+/* Compose */
+.compose-section{
+  padding: 5% 15%;
+  background-color: #51c4d3;
+  border: solid #126e82;
+}
+.compose-section h1{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.footer{
+  text-align: center;
+}
+
+/* Sign-in */
+.text-center {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .blueprint-logo{
+    border-right: none; 
+    border-bottom: solid #d8e3e7;
+    border-radius: 0%;
+    margin-bottom: 5%;
+  }
+  .contact-info{
+    border-left: none;
+    border-top: solid #d8e3e7;
+    border-radius: 0%;
+    margin-top: 5%;
+  }
+};
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+};

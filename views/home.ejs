@@ -1,0 +1,97 @@
+<%- include('partials/header') %>
+
+<body>
+        <section class="header-info">
+            <div class="blog-head container row">
+                <div class="left-side col-lg-6">
+                <h1>My Blog, <br>My Business</h1>
+                <h2>A collection of my thoughts throughout web development journey</h2>
+                <p>Join my mailing list to be updated on new posts!<p>
+
+                <!-- <form class="mailinglist" action="" method="post">
+                    <div class="input-group mb-3">                       
+                        <input type="text" class="form-control" placeholder="email@example.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <button class="btn btn-primary" type="submit" name="button"><span>Subscribe</span>
+                        </button>
+                  </div>
+                </form> -->
+
+                <!-- Begin Mailchimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <form action="https://gmail.us1.list-manage.com/subscribe/post?u=4e745681731d361e646ec1185&amp;id=bfd45688b2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll" class="input-group mb-3">
+                            <div class="mc-field-group">
+                                <input type="email" placeholder="email@example.com" name="EMAIL" class="form-control" id="mce-EMAIL">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4e745681731d361e646ec1185_bfd45688b2" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary"></div>
+                        </div>
+                    </form>
+                </div>
+                <!--End mc_embed_signup-->
+
+
+
+
+
+            </div>
+            <div class="right-side col-lg-6">    
+                <img class="blogimage img-fluid" src="images/whatisblog.png" alt="blog image" />        
+            </div>
+            </div>
+        </section>
+        
+    <container class="blog-posts">
+           <div class="blog-post-header">
+           <h1>Blog Collection</h1>
+           <p>These are simple thoughts of mine as I've worked my way through web development. Enjoy</p>
+            </div>
+            <div class="blog-card row row-cols-1 row-cols-md-3 g-4">
+                <%  posts.forEach(function(post){ %>
+                    <div class="col">
+                        <div class="card blogcard h-100">
+                            <div class="card-body">
+                                <h5 class="card-title"><%=post.title%></h5>
+                                <p class="card-text">
+                                    <%  if (post.content.length > 100){ %>
+                                        <p>
+                                            <%=post.content.substring(0, 500)%>
+                                            <a href="/posts/<%=post._id%>">... Read Post</a>
+                                        </p>
+                                        <% } else { %>
+                                            <p><%=post.content%></p>
+                                            <a href="/posts/<%=post._id%>">Read Post</a>
+                                            <% } %>
+                            </div>
+                                        <div class="card-footer">
+                                            <small class="text-muted"><%=post.uploadDate%></small>
+                                        </div>
+                            </div>
+                        </div>
+                <% }) %>
+            </div> 
+        </container>
+
+<section class="meet-section">
+        <div class="meet-me container row">
+            <div class="meet-me-left col-lg-6">
+                <img class="meet-me-image rounded img-fluid" src="images/IMG_1181.png" alt="image of me" /> 
+            </div>
+
+            <div class="meet-me-right col-lg-6">
+                <h1>Meet Bivens</h1>
+                <p>Web developer. Entrepreneur. Business Owner. Dream chaser. Wish Granter</p>
+
+                <div class="discuss-button col-lg-4">
+                    <a href='https://bivensblueprint.com/about' type="button" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+</section>
+    
+<%- include('partials/footer') %>
